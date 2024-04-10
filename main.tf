@@ -39,4 +39,10 @@ module "vm" {
     location = var.location
     user = var.user
     password = var.password
+    depends_on = [
+      azurerm_resource_group.my_rg,
+      azurerm_virtual_network.my_vnet,
+      azurerm_subnet.first_subnet,
+      azurerm_subnet.second_subnet
+  ]
 }

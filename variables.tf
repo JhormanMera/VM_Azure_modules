@@ -1,6 +1,7 @@
 variable "prefix" {
   type        = string
   description = "Project Name, prefix of the resources name ex. 'prefix'-rg for the resource group"
+  default     = "vm-esco"
 }
 
 variable "location" {
@@ -11,7 +12,7 @@ variable "location" {
 
 variable "user" {
   type        = string
-  default     = "admin"
+  default     = "jhormanmera"
   description = "Vm Username"
 }
 
